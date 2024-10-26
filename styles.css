@@ -1,10 +1,15 @@
 
+
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     top: 0;
     left: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 header{
@@ -17,6 +22,7 @@ header{
     top:0;
     left:0;
     background-color: bisque;
+    z-index: 999;
 
 }
 header h1{
@@ -65,22 +71,23 @@ section{
 }
 
 .home-div div:nth-of-type(1){
-    height:50vh;
-    width:20vw;
+    width:21vw;
+    height:60vh;
     background-color: blanchedalmond;
-    border-radius: 10px;
+    border-radius: 40px;
     margin-right: -250px;
+    margin-top: 50px;
     display: flex;
     
 }
 .main-pic{
-    height:52vh;
-    width:15vw;
+    width:17vw;
+    height:65vh;
     align-self: flex-end;
     position: relative;
-    top:0.5vh;
-    left:4vw;
-    border-radius: 10px;
+    top:2vh;
+    left:3.5vw;
+    border-radius: 50px;
     object-fit: cover;
 
 }
