@@ -145,6 +145,15 @@ header nav ul li a{
     position: relative;
     top: 5.5rem;
 }
+
+
+
+
+.line{
+    width:2px;
+    height:40vh;
+    background-color: gray;
+}
 .skills-sec-2{
     display: flex;
     flex-wrap: wrap;
@@ -154,8 +163,79 @@ header nav ul li a{
 .skills-sec-2 div{
     height:2rem;
     width:100%;
-    background-color: var(--bg-primary);
+    background-color: var(--x-background);
     gap: 1rem;
     position: relative;
     top: -1rem;
+    z-index: 5;
 }
+.skills-sec-2 div .baar-1{
+    height:2rem;
+    width:90%;
+    background-color: rgb(167, 110, 220);
+    z-index: 6;
+    position: relative;
+    top: -1.3rem;
+   
+}
+.skills-sec-2 div .baar-2{
+    height:2rem;
+    width:93%;
+    background-color: rgb(220, 110, 183);
+    z-index: 6;
+    position: relative;
+    top: -1.3rem;
+}
+.skills-sec-2 div .baar-3{
+    height:2rem;
+    width:60%;
+    background-color: rgb(110, 112, 220);
+    z-index: 6;
+    position: relative;
+    top: -1.3rem;
+}
+.skills-sec-2 div .baar-4{
+    height:2rem;
+    width:40%;
+    background-color: rgb(110, 198, 220);
+    z-index: 6;
+    position: relative;
+    top: -1.3rem;
+}
+.skills-sec-2 div .baar-5{
+    height:2rem;
+    width:30%;
+    background-color: rgb(220, 191, 110);
+    z-index: 6;
+    position: relative;
+    top: -1.3rem;
+}
+.baar-1 h4{
+  padding-top: 8px;
+  padding-left: 5px;
+}
+.baar-1 h4{
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+
+  .baar-2 h4{
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+
+  .baar-3 h4{
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+
+  .baar-4 h4{
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+
+  .baar-5 h4{
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+  
