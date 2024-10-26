@@ -1,5 +1,12 @@
+/* universal  */
+:root{
+    --primary-color:bisque;
+    --secoundry-color:blueviolet;
+    --bg-primary:antiquewhite;
 
-
+    /* colors for skills section */
+    --x-background:gray;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -10,7 +17,29 @@ body{
     left: 0;
     overflow-x: hidden;
     overflow-y: scroll;
+    box-sizing: border-box;
 }
+
+section{
+    height:100vh;
+    width:100vw;
+}
+
+.hdr{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.hdr h1{
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* header and nav bar */
 
 header{
     width:100%;
@@ -21,7 +50,7 @@ header{
     position:fixed;
     top:0;
     left:0;
-    background-color: bisque;
+    background-color: var(--primary-color);
     z-index: 999;
 
 }
@@ -38,28 +67,24 @@ header nav ul{
 }
 header nav ul li {
     list-style: none;
-    background-color: antiquewhite;
-    color: blueviolet;
+    background-color: var(--bg-primary);
+    color: var(--secoundry-color);
     padding: 4.5px 12px ;
     border-radius: 5px;
 }
 header nav ul li:hover{
-    background-color: blueviolet;
-    color: antiquewhite;
+    background-color: var(--secoundry-color);
+    color: var(--bg-primary);
 }
 header nav ul li a:hover{
-    color: antiquewhite;
+    color: var(--bg-primary);
 }
 header nav ul li a{
    text-decoration: none;
 
 }
 
-
-section{
-    height:100vh;
-    width:100vw;
-}
+/* home section */
 
 .home-div{
     height: 100%;
@@ -73,7 +98,7 @@ section{
 .home-div div:nth-of-type(1){
     width:21vw;
     height:60vh;
-    background-color: blanchedalmond;
+    background-color: var(--primary-color);
     border-radius: 40px;
     margin-right: -250px;
     margin-top: 50px;
@@ -95,4 +120,42 @@ section{
     width:40vw;
     gap:10vw;
 
+}
+
+/* skills section */
+
+.skills-div{
+    margin-top: 10vh;
+    height:90%;
+    width:100%;
+    position: relative;
+    top: 10vh;
+
+}
+.skills-div .skills-main{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skills-main div{
+    width: 21rem;
+    height:21rem;
+    /* background-color: aquamarine; */
+    position: relative;
+    top: 5.5rem;
+}
+.skills-sec-2{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.skills-sec-2 div{
+    height:2rem;
+    width:100%;
+    background-color: var(--bg-primary);
+    gap: 1rem;
+    position: relative;
+    top: -1rem;
 }
