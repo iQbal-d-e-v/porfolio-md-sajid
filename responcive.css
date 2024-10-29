@@ -41,7 +41,7 @@
         height: 5.5vh;
         position: fixed;
         top: 85vh;
-        left: 7.5vh;
+        left: 14vw;
         background-color: var(--primary-color);
         border-radius: 5px;
         z-index: 999;
@@ -58,13 +58,13 @@
     .mobile-nav ul li{
         list-style: none;
         background-color: var(--bg-primary);
-        padding: 3.5px 4px;
+        padding: 0.05rem;
         border-radius: 5px;
 
     }
     .mobile-nav ul li a{
         text-decoration: none;
-        padding: 3.5px 4px;
+        padding: 0.05rem;
     };
 
     header h1{
@@ -186,8 +186,8 @@
     .scrollable-area{
         display: flex;
         flex-wrap: wrap;
-        overflow-y: scroll; /* Horizontal scrolling */
-        overflow-x: hidden; /* Hide vertical overflow */
+        overflow-y: scroll; 
+        overflow-x: hidden; 
         white-space: nowrap;
         padding-top: 3vh;
 
@@ -224,6 +224,9 @@
     }
     .contacts-div main div{
         top: 3dvh;
+    }
+    .socil-links{
+        margin-top: 5dvh;
     }
     .home-div{
         top: 1vh;

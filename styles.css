@@ -18,6 +18,7 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
     box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
 }
 
 section{
@@ -60,6 +61,8 @@ header{
 }
 header h1{
     margin-left: 55px;
+    font-family: "Expletus Sans", sans-serif;
+    font-weight: 800;
 }
 header nav ul{
     display:flex;
@@ -351,14 +354,19 @@ main .project-section:nth-last-of-type(1){
 }
 .scrollable-area{
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 10vh;
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    white-space: nowrap;
 }
 .scrollable-area .project-card{
   width:20vh;
   height:20vh;
   border-radius: 3px;
   background-color: gray;
+  display: inline-block;
 
 }
 .scrollable-area .project-card:nth-of-type(1){
@@ -406,10 +414,13 @@ main .project-section:nth-last-of-type(1){
 }
 form{
     width:15rem;
-    height:15rem;
-    position: relative;
+    height: 18rem;
+    /* position: relative;
     top: 1rem;
-    left: 2.8rem;
+    left: 2.8rem; */
+
+    padding: auto;
+    margin: auto;
 
 }
 form legend{
