@@ -236,6 +236,9 @@
         top: 3dvh;
         height:23rem;
     }
+    form legend{
+        padding: 0.8rem;
+    }
     
     .socil-links{
         margin-top: 5dvh;
@@ -255,6 +258,16 @@
     .home-div h3{
         font-size: 1.6rem;
     }
-
+    footer{
+        position: relative;
+        width: 100%;
+        padding-bottom: 0;
+    
+    
+        
+    }
+    footer p{
+        display: inline-block;
+    }
     
 }
