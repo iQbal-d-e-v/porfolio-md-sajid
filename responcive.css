@@ -224,7 +224,9 @@
     }
     .contacts-div main div{
         top: 3dvh;
+        height: 21dvh;
     }
+    
     .socil-links{
         margin-top: 5dvh;
     }
