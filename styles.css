@@ -6,6 +6,12 @@
 
     /* colors for skills section */
     --x-background:gray;
+
+    /* font family */
+    --logo-font-family:"Expletus Sans", serif;
+    --nav-font-family:"Della Respira", serif;
+    --header-font-family:"Expletus Sans", serif;
+    --body-font-family:"Roboto Mono", monospace;
 }
 html{
     scroll-behavior: smooth;
@@ -18,7 +24,7 @@ body{
     overflow-x: hidden;
     overflow-y: scroll;
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
+    font-family: var(--body-font-family);
 }
 
 section{
@@ -39,6 +45,9 @@ section{
     text-align: center;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--header-font-family);
+}
 
 
 /* header and nav bar */
@@ -61,7 +70,7 @@ header{
 }
 header h1{
     margin-left: 55px;
-    font-family: "Expletus Sans", sans-serif;
+    font-family: var(--logo-font-family);
     font-weight: 800;
 }
 header nav ul{
@@ -70,13 +79,13 @@ header nav ul{
     justify-content: space-around;
     width:40vw;
     align-items: center;
+    font-family: var(--nav-font-family);
 
 }
 header nav ul li {
     list-style: none;
     background-color: var(--bg-primary);
     color: var(--secoundry-color);
-    padding: 4.5px 12px ;
     border-radius: 5px;
 }
 header nav ul li:hover{
@@ -88,7 +97,7 @@ header nav ul li a:hover{
 }
 header nav ul li a{
    text-decoration: none;
-
+   padding: 4.5px 12px ;
 }
 
 /* home section */
@@ -130,6 +139,10 @@ header nav ul li a{
     gap:10vw;
 
 }
+.home-div h3{
+    font-size: 2.3rem;
+}
+
 
 /* skills section */
 
@@ -150,9 +163,8 @@ header nav ul li a{
 .skills-main div{
     width: 21rem;
     height:21rem;
-    /* background-color: aquamarine; */
     position: relative;
-    top: 4.5rem;
+    top: 1rem;
 }
 .skills-sec-1 {
     display: flex;
@@ -176,14 +188,15 @@ header nav ul li a{
     margin-left: 20px;
 }
 .skills-sec-1 div h4{
-    font-size: 24px;
+    font-size: 21px;
     position: relative;
-    top: -25px;
+    top: -33px;
    
 }
 .skills-sec-1 div p{
     position: relative;
-    top: -50px;
+    top: -65px;
+    font-size: smaller;
 }
 
 
@@ -288,9 +301,6 @@ header nav ul li a{
     background-color: var(--primary-color);
 
 }
-.project-div div {
-    background-color: var(--primary-color);
-}
 .project-div div h1{
     background-color: var(--primary-color);
 }
@@ -360,11 +370,27 @@ main .project-section:nth-last-of-type(1){
     overflow-x: scroll; 
     overflow-y: hidden; 
     white-space: nowrap;
+    position: relative;
+    background: white;
 }
+
+.scrolable-content{
+    display: inline-block; 
+    overflow-x: auto;
+     scrollbar-width: none; 
+     -ms-overflow-style:none;
+     gap:10vh;
+     white-space: nowrap;
+     background: white;
+}
+.scrollable-content::-webkit-scrollbar { 
+    display: none;}
+    
 .scrollable-area .project-card{
   width:20vh;
   height:20vh;
   border-radius: 3px;
+  margin: 0 3dvh;
   background-color: gray;
   display: inline-block;
 

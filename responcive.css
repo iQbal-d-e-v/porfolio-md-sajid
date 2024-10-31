@@ -54,6 +54,7 @@
         align-items: center;
         justify-content: space-evenly;
         margin-left: -9vw;
+        font-family: var(--nav-font-family);
     }
     .mobile-nav ul li{
         list-style: none;
@@ -192,6 +193,13 @@
         padding-top: 3vh;
 
     }
+    .scrolable-content{
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll; 
+        overflow-x: hidden; 
+        white-space: nowrap;
+    }
     .project-card{
         width:20vh;
         height:20vh;
@@ -201,8 +209,11 @@
         margin: auto;
         
       }
-      .scrollable-area .project-card:nth-of-type(1){
+      .scrollable-area .project-card{
         margin: auto;
+    }
+    .scrollable-area .project-card:nth-of-type(1) {
+        margin-left: auto;
     }
     .contacts-div{
         margin-top: 10vh;
@@ -224,7 +235,7 @@
     }
     .contacts-div main div{
         top: 3dvh;
-        height: 21dvh;
+        height:23rem;
     }
     
     .socil-links{
@@ -241,6 +252,9 @@
     }
     .contacts-div{
         top: 1vh;
+    }
+    .home-div h3{
+        font-size: 1.6rem;
     }
 
     
