@@ -31,6 +31,9 @@
         z-index: 999;
     
     }
+    header h1{
+        margin: 0 auto;
+    }
     header nav {
         display:none;
         
